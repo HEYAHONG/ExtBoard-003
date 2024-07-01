@@ -35,13 +35,13 @@
 
 拉高Boot0(只需要短接板上的Boot即可)。将硬件通过USB连接至计算机。
 
-![APM32 Bootloader的DFU设备](APM32 Bootloader的DFU设备.png)
+![APM32_Bootloader的DFU设备](APM32_Bootloader的DFU设备.png)
 
 
 
 ### 烧录
 
-![Geehy Prog USB DFU](Geehy Prog USB DFU.png)
+![Geehy_Prog_USB DFU](Geehy_Prog_USB_DFU.png)
 
 ### 烧录完成
 
