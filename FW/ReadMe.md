@@ -26,7 +26,7 @@
 
 ### 准备工作
 
-在极海官网的[APM32F072](https://geehy.com/product/fifth/APM32F072#document)介绍页中安装好以下工具:
+安装好以下工具(资源下载在极海官网的[APM32F072](https://geehy.com/product/fifth/APM32F072#document)介绍页):
 
 - [GeehyProg SetUp](https://geehy.com/uploads/tool/GeehyProg_V1.0.2_Chinese.msi)
 - [DFU驱动安装](https://geehy.com/uploads/tool/dfu驱动安装.zip)
