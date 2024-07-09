@@ -22,7 +22,7 @@
 
 其中推荐采用使用芯片Bootloader自带的DFU烧录,只需要在上电时拉高Boot0引脚即可。
 
-## 芯片内嵌Bootloader的DFU烧录
+## 使用芯片内嵌Bootloader的DFU烧录(官网工具)
 
 ### 准备工作
 
@@ -48,4 +48,23 @@
 烧录完成后并重新上电后，可在设备管理器中找到candleLight设备。
 
 ![candleLight](candleLight.png)
+
+## 使用芯片内嵌Bootloader的DFU烧录(dfu-util)
+
+对于非Windows用户，可使用[dfu-util](http://dfu-util.sourceforge.net/
+)烧录APM32F072。
+
+本段落以ubuntu24.04下的操作为例，主要分为以下步骤：
+
+- 短接Boot0，使用USB连接计算器。
+- 执行dfu命令:
+
+```bash
+#firmware.bin需要替换为实际的固件程序
+sudo dfu-util  -w -d 314b:0106 -s 0x08000000  -a 0 -R --download firmware.bin
+```
+
+- 重新上电
+
+![ubuntu_dfu_util](ubuntu_dfu_util.png)
 
